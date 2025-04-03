@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h2>Sleep Tracker</h2>
+
+        <div>
+            <div id="hours_of_sleep_div">
+                <label for="hours_of_sleep">Hours of sleep:</label>
+                <input type="number" id="hours_of_sleep" placeholder="#">
+            </div>
+
+            <div id="sleep_quality_div">
+                <label for="sleep_quality">Sleep quality</label>
+                <input type="number" id="sleep_quality" placeholder="(Rate quality 1-10)">
+            </div>
+
+            <div id="time_of_day_wake_div">
+                <label for="time_of_day_wake">Time of day you woke up:</label>
+                <input type="text" id="time_of_day_wake" placeholder="(morning, noon, afternoon, evening, night)">
+            </div>
+        </div>
+
+        <button id="submit" onclick="sleep_tracker()">Judge Sleep</button>
+        <p id="response"></p>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
